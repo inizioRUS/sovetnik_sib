@@ -67,5 +67,5 @@ class SibintekService:
         )
 
         if res[0]['distance'] > 0.8:
-            answer += f"Самый релевантный документ: {res[0]["entity"]["filename"]}\n"
+            answer += f"Самый релевантный документ: {res[0]['entity']['filename']}\n"
         return {"answer": answer}
